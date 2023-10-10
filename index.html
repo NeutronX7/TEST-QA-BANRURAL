@@ -76,13 +76,11 @@
       setGameOver();
     } else {
       lastResult.textContent = 'Incorrecto! ';
-      lastResult.style.backgroundColor = 'green';
+      lastResult.style.backgroundColor = 'black';
       if(userGuess > randomNumber) {
         lowOrHi.textContent = 'El número es menor!';
-		    lastResult.style.backgroundColor = 'black';
-      } else if(userGuess < randomNumber) {
+      } else if(userGuess > randomNumber) {
         lowOrHi.textContent = 'El número es mayor!';
-		    lastResult.style.backgroundColor = 'black';
       }
     }
     guessCount++;
